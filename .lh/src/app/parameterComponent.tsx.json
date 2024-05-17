@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/app/parameterComponent.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1715926331825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715926354891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n  type requestParameter = {\n-    name:string,\n+    userName:string,\n     testClick:()=>void,\n  }\n \n-export default function TestComponent() {\n+export default function TestComponent({userName,testClick}:requestParameter) {\n \n   \n   return (\n     <>\n"
+                },
+                {
+                    "date": 1715926399504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,14 @@\n  }\n \n export default function TestComponent({userName,testClick}:requestParameter) {\n \n-  \n+  console.log(\"userName====\",userName)\n   return (\n     <>\n         component test\n+        <Button onClick={testClick}>\n+            Test click\n+        </Button>\n     </>\n   );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715926527603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n- type requestParameter = {\n+'use client'\n+\n+type requestParameter = {\n     userName:string,\n     testClick:()=>void,\n  }\n \n"
+                },
+                {
+                    "date": 1715926540602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-'use client'\n+\"use client\";\n \n type requestParameter = {\n     userName:string,\n     testClick:()=>void,\n"
+                },
+                {
+                    "date": 1715926583148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n   console.log(\"userName====\",userName)\n   return (\n     <>\n         component test\n-        <Button onClick={testClick}>\n+        <button onClick={testClick}>\n             Test click\n-        </Button>\n+        </button>\n     </>\n   );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715926640507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   return (\n     <>\n         component test\n         <button onClick={testClick}>\n-            Test click\n+            Test click=={userName}\n         </button>\n     </>\n   );\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1715926331825,
+            "name": "Commit-0",
+            "content": " type requestParameter = {\n    name:string,\n    testClick:()=>void,\n }\n\nexport default function TestComponent() {\n\n  \n  return (\n    <>\n        component test\n    </>\n  );\n}"
+        }
+    ]
+}

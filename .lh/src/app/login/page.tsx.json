@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/login/page.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1715925199465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715925233238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-'use client'\n+\"use client\";\n \n \n export default function Login() {\n   return (\n"
+                }
+            ],
+            "date": 1715925199465,
+            "name": "Commit-0",
+            "content": "'use client'\n\n\nexport default function Login() {\n  return (\n    <>\n      login\n    </>\n  );\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "sourceFile": "src/app/page.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1715924789175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715924825727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import Image from \"next/image\";\n \n export default function Home() {\n   return (\n-  <>\n+  <main>\n     Home\n-  </>\n+  <main/>\n   );\n }\n"
+                },
+                {
+                    "date": 1715924844257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import Image from \"next/image\";\n \n export default function Home() {\n   return (\n-  <main>\n-    Home\n-  <main/>\n+    <main className=\"flex min-h-screen flex-col items-center justify-between p-24\">\n+       \n+    </main>\n   );\n }\n"
+                },
+                {
+                    "date": 1715924869526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import Image from \"next/image\";\n \n export default function Home() {\n   return (\n-    <main className=\"flex min-h-screen flex-col items-center justify-between p-24\">\n+    <main className=\"flex bg-white\">\n        \n     </main>\n   );\n }\n"
+                },
+                {
+                    "date": 1715924942062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import Image from \"next/image\";\n \n export default function Home() {\n   return (\n-    <main className=\"flex bg-white\">\n-       \n-    </main>\n+    <>\n+      home\n+    </>\n   );\n }\n"
+                },
+                {
+                    "date": 1715924959988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+'use client'\n import Image from \"next/image\";\n \n export default function Home() {\n   return (\n"
+                },
+                {
+                    "date": 1715925047752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+'use client'\n+import Image from \"next/image\";\n+\n+export default function Home() {\n+\n+  const buttonClick =() => {\n+\n+  }\n+  return (\n+    <>\n+      home\n+      <button onClick={buttonClick}>\n+\n+      </button>\n+    </>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1715925066521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,20 +8,10 @@\n   }\n   return (\n     <>\n       home\n-      <button onClick={buttonClick}>\n+      <button onClick={buttonClick} className=\"size-4\">\n \n       </button>\n     </>\n   );\n }\n-'use client'\n-import Image from \"next/image\";\n-\n-export default function Home() {\n-  return (\n-    <>\n-      home\n-    </>\n-  );\n-}\n"
+                },
+                {
+                    "date": 1715925076998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   return (\n     <>\n       home\n       <button onClick={buttonClick} className=\"size-4\">\n-\n+        Go\n       </button>\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1715925085402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   }\n   return (\n     <>\n       home\n-      <button onClick={buttonClick} className=\"size-4\">\n+      <button onClick={buttonClick}  >\n         Go\n       </button>\n     </>\n   );\n"
+                },
+                {
+                    "date": 1715925091681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   }\n   return (\n     <>\n       home\n-      <button onClick={buttonClick}  >\n+      <button onClick={buttonClick}  width=\"10\">\n         Go\n       </button>\n     </>\n   );\n"
+                },
+                {
+                    "date": 1715925097579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   }\n   return (\n     <>\n       home\n-      <button onClick={buttonClick}  width=\"10\">\n+      <button onClick={buttonClick}   >\n         Go\n       </button>\n     </>\n   );\n"
+                },
+                {
+                    "date": 1715925108512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,15 +3,15 @@\n \n export default function Home() {\n \n   const buttonClick =() => {\n-\n+    \n   }\n   return (\n     <>\n       home\n       <button onClick={buttonClick}   >\n-        Go\n+        Go login\n       </button>\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1715925121131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,10 @@\n       home\n       <button onClick={buttonClick}   >\n         Go login\n       </button>\n+      <button onClick={buttonClick}   >\n+        Go sign up\n+      </button>\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1715925128192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     <>\n       home\n       <button onClick={buttonClick}   >\n         Go login\n-      </button>\n+      </button><br/>\n       <button onClick={buttonClick}   >\n         Go sign up\n       </button>\n     </>\n"
+                },
+                {
+                    "date": 1715925135834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     <>\n       home\n       <button onClick={buttonClick}   >\n         Go login\n-      </button><br/>\n+      </button><br/><br/>\n       <button onClick={buttonClick}   >\n         Go sign up\n       </button>\n     </>\n"
+                },
+                {
+                    "date": 1715925289312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n 'use client'\n-import Image from \"next/image\";\n+import { useRouter } from 'next/navigation'\n \n export default function Home() {\n \n   const buttonClick =() => {\n"
+                },
+                {
+                    "date": 1715925302847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+'use client'\n+import { useRouter } from 'next/navigation'\n+\n+export default function Home() {\n+\n+  const router = useRouter()\n+\n+  const buttonClickGo =() => {\n+    \n+  }\n+  return (\n+    <>\n+      home\n+      <button onClick={buttonClick}   >\n+        Go login\n+      </button><br/><br/>\n+      <button onClick={buttonClick}   >\n+        Go sign up\n+      </button>\n+    </>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1715925330380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,38 +4,23 @@\n export default function Home() {\n \n   const router = useRouter()\n \n-  const buttonClickGo =() => {\n+  const buttonClickLogin =() => {\n     \n   }\n-  return (\n-    <>\n-      home\n-      <button onClick={buttonClick}   >\n-        Go login\n-      </button><br/><br/>\n-      <button onClick={buttonClick}   >\n-        Go sign up\n-      </button>\n-    </>\n-  );\n-}\n-'use client'\n-import { useRouter } from 'next/navigation'\n \n-export default function Home() {\n \n-  const buttonClick =() => {\n+  const buttonClickSignUp =() => {\n     \n   }\n   return (\n     <>\n       home\n-      <button onClick={buttonClick}   >\n+      <button onClick={buttonClickLogin}   >\n         Go login\n       </button><br/><br/>\n-      <button onClick={buttonClick}   >\n+      <button onClick={buttonClickSignUp}   >\n         Go sign up\n       </button>\n     </>\n   );\n"
+                },
+                {
+                    "date": 1715925362736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,14 @@\n \n   const router = useRouter()\n \n   const buttonClickLogin =() => {\n-    \n+    router.push('/login');\n   }\n \n \n   const buttonClickSignUp =() => {\n-    \n+    router.push('/signUp')\n   }\n   return (\n     <>\n       home\n"
+                },
+                {
+                    "date": 1715926426812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n 'use client'\n import { useRouter } from 'next/navigation'\n \n+import TestComponent from \"./parameterComponent\";\n+\n export default function Home() {\n \n   const router = useRouter()\n \n"
+                },
+                {
+                    "date": 1715926480654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,13 @@\n \n   const buttonClickSignUp =() => {\n     router.push('/signUp')\n   }\n+\n+  const testClickFromHome =() => {\n+\n+    console.log('testClickFromHome');\n+  }\n   return (\n     <>\n       home\n       <button onClick={buttonClickLogin}   >\n@@ -23,7 +28,12 @@\n       </button><br/><br/>\n       <button onClick={buttonClickSignUp}   >\n         Go sign up\n       </button>\n+\n+      <TestComponent\n+        userName='test name'\n+        testClick={testClickFromHome}\n+      />\n     </>\n   );\n }\n"
+                },
+                {
+                    "date": 1715926601046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n       </button><br/><br/>\n       <button onClick={buttonClickSignUp}   >\n         Go sign up\n       </button>\n+      <br/><br/>\n \n       <TestComponent\n         userName='test name'\n         testClick={testClickFromHome}\n"
+                }
+            ],
+            "date": 1715924789175,
+            "name": "Commit-0",
+            "content": "import Image from \"next/image\";\n\nexport default function Home() {\n  return (\n  <>\n    Home\n  </>\n  );\n}\n"
+        }
+    ]
+}

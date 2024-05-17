@@ -29,7 +29,6 @@ export default function Home() {
       <button onClick={buttonClickSignUp}   >
         Go sign up
       </button>
-      <br/><br/>
 
       <TestComponent
         userName='test name'

@@ -15,11 +15,6 @@ export default function Home() {
   const buttonClickSignUp =() => {
     router.push('/signUp')
   }
-
-  const testClickFromHome =() => {
-
-    console.log('testClickFromHome');
-  }
   return (
     <>
       home
@@ -29,12 +24,6 @@ export default function Home() {
       <button onClick={buttonClickSignUp}   >
         Go sign up
       </button>
-      <br/><br/>
-
-      <TestComponent
-        userName='test name'
-        testClick={testClickFromHome}
-      />
     </>
   );
 }
